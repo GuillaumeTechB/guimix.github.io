@@ -1,0 +1,412 @@
+                                        /*STYLE COMMUNS*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2.5%;
+}
+
+
+/* **********Header***************/
+
+   header{
+    height: 80px;
+}
+
+main{
+    border-top: .5px solid #63d377;
+    border-bottom: .5px solid #63d377;
+}
+
+.logo {
+    margin-right: 1.5em;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+nav{
+    margin-bottom: .5em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*************Main****************/
+
+.flexMain{
+    display: flex;
+}
+
+.flexMain section{
+    text-align: center;
+    color: #DDD;
+    padding: 1em;
+    flex:1 1 40%;
+    margin: 2em .5em 2em .5em;
+    /*border-radius: 10px;*/
+}
+
+main .left h2{
+    font-size: 3em;
+    line-height: 2em;
+    color: #CCC;
+    font-family:  'Lato', sans-serif;
+    text-shadow: 0 0 10px black;
+}
+
+.left span{
+    color: #ACA;
+    text-shadow: 0 0 5px #000;
+}
+
+.left i{
+    margin: .25em 0;
+    font-size: 5em;
+    border:1px solid #63d377;
+}
+
+.left:hover i{
+background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.right:hover h2{
+  color:#ACA;
+  
+
+}
+
+
+/***************Formulaire***************/
+
+.form{
+    padding-top: 1em;
+    padding-left: 15%;
+}
+.form h2{
+    font-family: 'Lato', sans-serif; 
+    text-align: left;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #000;
+    margin-bottom: 1em;
+}
+
+.form label, input{
+    display:block;
+    text-align: left;
+}
+
+.form label{
+    font-size: 1.15em;
+    margin-bottom: .75em;
+}
+
+.form input[placeholder]{
+    font-style: italic;
+    padding: .75em .5em ;
+    background-color: rgb(187, 202, 167);
+    border-radius: 5px;
+    
+    margin-bottom: 1.5em;
+}
+
+.form input[type="checkbox"]{
+    margin-top: 4em;
+    margin-bottom:.5em;
+}
+
+.form label[for="autorisation"]{
+    font-size: .9em;
+    font-style: italic;
+}
+
+/*.form input[type="submit"]{
+    font-size: 1em;
+    margin-top: 1em;
+    padding: .75em 1em .5em .75em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px 2px #000;
+    outline: 1px solid #000;
+    outline-offset: -2px;
+    background-color: #694;
+    color: #000;
+    font-weight: bold;
+}*/
+
+.form input[type="submit"]{
+    font-size: 1em;
+    margin-top: 1em;
+    padding: .75em 1em .5em .75em;
+    border-bottom: 1px solid #63d377;
+    border-right: 1px solid #63d377;
+    border-top: none;
+    border-left: none;
+    box-shadow: 5px 5px 5px 2px #000;
+    background-color: #222;
+    color: white;
+   
+}
+
+
+.form input[type="submit"]:active{
+    transform : translate(5px, 5px);
+    box-shadow: none;
+}
+
+footer{
+    /*border-top: .5px solid #FFF;*/
+    padding: .5em;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    font-size: .7em;
+    color: #DDD;
+}
+
+/*****************Verification formaulaire **********/
+.invalid{
+    border: initial;
+    border: 2px solid red;
+}
+
+.msg{
+    position:relative;
+    top: -25px;
+    background-color: #A00;
+    color: #DDD;
+    border-radius :5px;
+    font-size: .7em;
+    font-style: italic;
+}
+
+
+                                                    /*ECRAN MAX 480px */
+
+@media screen and (max-width: 29.99em){
+  
+    body{
+        background-image: none;
+        background-color: rgb(30, 30, 30);
+    }
+
+    header{
+        
+        height: 60px;
+    }
+
+    .iconNone{
+        display: none;
+    }
+
+    .flex{
+        padding: 1em 0;
+    }
+    .logo{
+        font-size: 1.25rem;
+        flex : 1 0 auto;
+    }
+
+    .flex i[class*="arrow"]{
+        margin-bottom: .5em;
+        color: #63d377;
+    }
+
+    .flexMain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexMain section{
+        margin-top: 0em;
+    }
+
+    .left{
+        background-image: url("images/fondM.jpg");
+        box-shadow: 0 0 0 1440px rgba(0, 0, 0, 0.6)inset;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom: 2px solid #333;
+    }
+
+    .left i{
+        font-size: 3.5em;
+        transform: rotate(90deg);
+    }
+
+    main{
+        border-top:none ;
+        border-bottom: none;
+    }
+
+    main .left h2, .right h2{
+        font-size: 2em;
+    }
+
+    .right{
+        box-shadow: none;
+    }
+    
+    .form{
+        padding-left: 0;
+    }
+
+    .form h2{
+        text-align: center;
+    }
+
+    .form input:not(input[type="number"],
+                input[type="submit"], input[type="checkbox"]){
+        width: 100%;
+    }
+
+    .form input[type="checkbox"]{
+       margin-top: 3em;
+       margin-bottom: 1em;
+    }
+}
+
+footer{
+    border-top: none;
+    background-color: #222;
+}
+
+
+                                                /*ECRAN 480px A 1024px*/
+
+@media screen and (min-width: 30em) and (max-width: 63.99em){
+    
+    body{
+        background-image: url("images/fondM.jpg");
+        box-shadow: 0 0 0 1440px rgba(0, 0, 0, 0.6)inset;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        height:80px;
+        background-color: rgba(30, 30, 30);
+    }
+
+    .flex{
+        padding: 1.5em 0;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .iconNone{
+        display: none;
+    }
+
+    .flex i[class*="arrow"]{
+        font-size: 1.5em;
+        margin-bottom: .5em;
+        color: #63d377;
+      }
+
+      main .left h2, .right h2{
+        font-size: 2em;
+    }
+
+     main .left h2{
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: 2.25em;
+        text-align: center;
+     }
+
+    .left i{
+        margin: .25 0;
+        font-size: 5em;
+        border:1px solid #63d377;
+    }
+
+    .form{
+        padding-left: 2%;
+    }
+
+    .flexMain section{
+        border-radius: 0;
+    }
+
+    .right{
+        
+        box-shadow:-3px 0px 3px -3px #000; 
+    }
+
+    .form input:not(input[type="number"],
+    input[type="submit"], input[type="checkbox"]){
+    width: 100%;
+    }
+}
+
+
+                                        /*ECRAN MIN 1024px*/
+
+@media screen and (min-width: 64em){
+
+    header{
+        background-color: rgb(30, 30, 30);
+
+    }
+    body{
+        background-image: url("images/fond.jpg");
+        box-shadow: 0 0 0 1440px rgba(0, 0, 0, 0.6) inset;
+        background-size: cover;
+    }
+
+    .flex a[title="Home"]{
+        margin-right: 6em;
+        margin-bottom: .25em;
+        font-family: 'Calligraffitti', cursive;
+        color: #FFF;
+        font-size: 1.5em;
+    }
+    
+   /* .flex :last-child{
+
+        text-align: center;
+        margin-top: .25em;
+        font-size: 1.5rem;
+        text-shadow: 5px 5px 15px #000;
+        color: #FFF
+
+    }*/
+    .flex :last-child /*p*/ {
+        font-family: 'Calligraffitti', cursive;
+        margin: 1em 0;
+        font-size: 1.4rem;
+        text-shadow: 0 0 15px #000;
+        /*text-transform: uppercase;*/
+        color: #FFF;
+    }
+    
+.arrowNone{
+        display: none;
+    }
+
+    .right{
+        background-color: rgba(250, 250, 250, 0.041);
+    }
+
+    .form input:not(input[type="number"],
+                [type="submit"], 
+                [type="checkbox"]){
+        width:75%;
+    }
+}

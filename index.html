@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/878534cf28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="landing.js"></script>
+    <title>Page de destination</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul class ="flex">
+                    <li >
+                        <a class="logo" href="#" title="HomePage">Mountain Expédition</a>
+                    </li>
+                    <li class = "iconNone">
+                        <a href="#"  title="Home">Home</a>
+                    </li>
+                    <li class="iconNone">
+                        <div>
+                            <a href="#" title="Panier">Votre panier<!--<i class="fa-solid fa-cart-shopping"</i>--></a>
+                            <!--<p>Votre&nbsp;panier</p> -->
+                        </div>
+                    </li>
+                   <li class="arrowNone">
+                        <a href="#"  title ="Page précédente"><i class="fa-solid fa-arrow-left-long"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
+            <div class="flexMain">
+                <section class="left">
+                    <div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <h2>Essayez <br><span>gratuitement</span><br> nos<br>équipements </h2>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="form">
+                        <div>
+                            <h2>Formulaire de contact</h2>
+                        </div>
+                        <form  id = "myForm" action="" novalidate>
+                            <div>
+                                <label for="name">Nom</label>
+                                <input type="text"  id="name" name="name" placeholder="DUPONT" required>
+                            </div>
+                            <div>
+                                <label for="prenom">Prenom</label>
+                                <input type="text"  id="surname" name="surname" placeholder="Stephane" required>
+                            </div>
+                            <div>
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" placeholder="18" min="18" max="99" required>
+                            </div>
+                            <div>    
+                                <label for="mail">Email</label>
+                                <input type="email" id="mail" name="mail" placeholder="monTrekking@gmail.com" required>
+                            </div> 
+                            <div>   
+                                <input type="checkbox" id="autorisation" name="autorisation"  required>
+                            </div>
+                                <label for="autorisation"> En cochant cette case, j'accepte les conditions générales*</label>
+                            <div >
+                                <input id="soumettre" type="submit" value="Envoyer">
+                            </div>
+
+                        </form>
+                    </div>    
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Mention légales | @monSite.fr</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
