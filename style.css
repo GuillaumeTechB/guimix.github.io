@@ -242,9 +242,15 @@ footer{
         border-bottom: 2px solid #333;
     }
 
+    .left i:first-child{
+        margin-top: 0.4em;
+    }
+
+    .left i:last-child{
+        margin-bottom: .4em;
+    }
     .left i{
-        /*margin-top: 50px;
-        font-size: 4em;*/
+     
         transform: rotate(90deg);
     }
 
@@ -331,11 +337,7 @@ footer{
         text-align: center;
      }
 
-    .left i{
-        margin: .25 0;
-        font-size: 5em;
-        border:1px solid #63d377;
-    }
+    
 
     .form{
         padding-left: 2%;
