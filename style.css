@@ -243,7 +243,8 @@ footer{
     }
 
     .left i{
-        font-size: 3.5em;
+        /*margin-top: 50px;
+        font-size: 4em;*/
         transform: rotate(90deg);
     }
 
